@@ -1,0 +1,1 @@
+import*as e from"react";var t={d:(e,r)=>{for(var a in r)t.o(r,a)&&!t.o(e,a)&&Object.defineProperty(e,a,{enumerable:!0,get:r[a]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)},r={};t.d(r,{A:()=>l});const a=(o={default:()=>e.default},n={},t.d(n,o),n);var o,n;const l=function(){return a.default.createElement("div",null,"auth")};var d=r.A;export{d as default};
