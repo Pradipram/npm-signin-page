@@ -1,5 +1,4 @@
 const path = require("path");
-// import path from "path"
 
 module.exports = {
   mode: "production",
@@ -20,6 +19,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: "file-loader"
       }
     ]
   },
