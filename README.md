@@ -45,7 +45,7 @@ export default App;
 
 ## Contributing
 
-Contributions are always welcome! If you have any suggestions or improvements, please submit a pull request or open an issue on GitHub.
+Contributions are always welcome ! If you have any suggestions or improvements, please submit a pull request or open an issue on GitHub.
 
 See `contributing.md` for ways to get started.
 
