@@ -13,6 +13,12 @@
   },
   "author": "Pradip Ram",
   "license": "ISC",
+  "keywords": [
+    "react-signin-page",
+    "react-login-page",
+    "login-page",
+    "react"
+  ],
   "bugs": {
     "url": "https://github.com/Pradipram/npm-signin-page/issues"
   },
