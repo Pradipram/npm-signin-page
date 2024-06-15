@@ -7,26 +7,27 @@ module.exports = {
     path: path.resolve(__dirname, "build"),
     filename: "index.js",
     library: {
-      type: "module"
-    }
+      type: "module",
+    },
   },
   experiments: {
-    outputModule: true
+    outputModule: true,
   },
   module: {
     rules: [
       { test: /\.(js|jsx)$/, exclude: /node_modules/, loader: "babel-loader" },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        use: "file-loader"
-      }
-    ]
+        use: "file-loader",
+      },
+    ],
   },
   externals: {
-    react: "react"
-  }
+    react: "react",
+    "react-dom": "react-dom",
+  },
 };

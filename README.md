@@ -12,6 +12,7 @@ npm-signin-page is a reusable React component designed to provide a simple and c
 - **Easy Integration**: Seamlessly add the sign-in page component to your existing React projects.
 - **Customization**: Style the sign-in page according to your application's theme using custom CSS.
 - **Lightweight**: Minimal dependencies ensure that your application remains fast and efficient.
+- show password feature
 
 
 ## Installation
@@ -20,16 +21,17 @@ Install the package using npm:
 ```bash
 npm i react-signin-page
 ```
+
 ## Usage
 
 ```javascript
-import React from 'react';
-import SignInPage from 'react-signin-page';
+import React, { useState } from "react"
+import Login from "react-signin-page"
 
 function App() {
   return (
     <div className="App">
-      <SignInPage />
+      <Login useState = {useState}/>
     </div>
   );
 }

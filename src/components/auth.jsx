@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import "../assets/css/style.css"
+import React from "react";
+import "../assets/css/style.css";
 
 //temporary
 // import bg from "../assets/images/bg.jpg"
-const bg = "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600"
+const bg =
+  "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
-const Auth = () => {
-  // const [seen,setSeen] = useState(false);
+const Login = ({ useState }) => {
+  const [seen, setSeen] = useState(false);
   // const [seen,setSeen] = React.useState(false);
 
   return (
@@ -31,8 +32,8 @@ const Auth = () => {
 
           <div className="login__box">
             <input
-              // type={seen ? "text" : "password"}
-              type="password"
+              type={seen ? "text" : "password"}
+              // type="password"
               placeholder="Password"
               required
               name="password"
@@ -50,9 +51,9 @@ const Auth = () => {
               type="checkbox"
               className="login__check-input"
               id="user-check"
-              // onClick={() => {
-              //   setSeen(!seen);
-              // }}
+              onClick={() => {
+                setSeen(!seen);
+              }}
             />
             <label className="login__check-label">Show Password</label>
           </div>
@@ -79,4 +80,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Login;
