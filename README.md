@@ -22,6 +22,7 @@ Install the package using npm:
 npm i react-signin-page
 ```
 
+
 ## Usage
 
 ```javascript
@@ -38,6 +39,11 @@ function App() {
 
 export default App;
 ```
+#### You can pass following props
+|Props |Function|
+|:----:|:------:|
+|bg|change background image|
+
 
 
 ## Screenshots
