@@ -2,17 +2,18 @@ import React from "react";
 import "../assets/css/style.css";
 
 //temporary
-// import bg from "../assets/images/bg.jpg";
-const dfbg =
-  "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
+import dfbg from "../assets/images/bg1.jpg";  
+// const dfbg =
+//   "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
 const Login = ({ useState, bg }) => {
   const [seen, setSeen] = useState(false);
   // const [seen,setSeen] = React.useState(false);
-  let imgSrc = bg ? bg : dfbg
+  let imgSrc = bg ? bg : dfbg;
 
   return (
     <div className="login">
+      <h1>{imgSrc}</h1>
       <img src={imgSrc} alt="background" className="login__bg" />
 
       <form className="login__form">
