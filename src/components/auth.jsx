@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/css/style.css";
 
 //temporary
-import dfbg from "../assets/images/bg1.jpg";  
+import dfbg from "../assets/images/bg1.jpg";
 // const dfbg =
 //   "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
@@ -13,7 +13,7 @@ const Login = ({ useState, bg }) => {
 
   return (
     <div className="login">
-      <h1>{imgSrc}</h1>
+      {/* <h1>{imgSrc}</h1> */}
       <img src={imgSrc} alt="background" className="login__bg" />
 
       <form className="login__form">
