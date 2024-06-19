@@ -1,8 +1,10 @@
 import React from "react";
 import "../assets/css/style.css";
+import "../assets/css/newStyle.scss"
 
 //temporary
-import dfbg from "../assets/images/bg1.jpg";
+// import dfbg from "../assets/images/bg.jpg";
+import { dfbg,key,mail } from "../assets";
 // const dfbg =
 //   "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
@@ -13,7 +15,6 @@ const Login = ({ useState, bg }) => {
 
   return (
     <div className="login">
-      {/* <h1>{imgSrc}</h1> */}
       <img src={imgSrc} alt="background" className="login__bg" />
 
       <form className="login__form">
@@ -29,7 +30,7 @@ const Login = ({ useState, bg }) => {
               className="login__input"
               // onChange={(e) => onValueChange(e)}
             />
-            <i className="ri-mail-fill"></i>
+            <img src={mail} alt="mail" className="iconImage"/>
           </div>
 
           <div className="login__box">
@@ -42,7 +43,7 @@ const Login = ({ useState, bg }) => {
               className="login__input"
               // onChange={(e) => onValueChange(e)}
             />
-            <i className="ri-lock-2-fill"></i>
+            <img src={key} alt="password" className="iconImage"/>
           </div>
         </div>
         {/* <Typography className="error">{error}</Typography> */}
@@ -78,7 +79,7 @@ const Login = ({ useState, bg }) => {
         </div>
       </form>
     </div>
-    // <div>Hello world</div>
+    // <div>hidepassword: {hidePassword}</div>
   );
 };
 
