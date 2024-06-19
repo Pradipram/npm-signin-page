@@ -26,23 +26,70 @@ npm i react-signin-page
 ## Usage
 
 ```javascript
-import React, { useState } from "react"
-import Login from "react-signin-page"
+import React, { useState } from "react";
+import Login from "react-signin-page";
 
 function App() {
-  return (
-    <div className="App">
-      <Login useState = {useState}/>
-    </div>
-  );
+    const onValueChange = (e) =>{
+        // write function for handleing the user input
+        // e.target.email is email
+        // e.target.passoword is password
+    }
+
+    const handleloginUser = (e) =>{
+        //write function for handeling the sign in function
+    }
+
+    return (
+        <div className="App">
+        <Login useState = {useState} onValueChange={onValueChange} handleSubmit={handleloginUser}/>
+        </div>
+    );
 }
 
 export default App;
 ```
-#### You can pass following props
+#### props and their definition
 |Props |Function|
 |:----:|:------:|
 |bg|change background image|
+|onValueChange|handle user input e.g. email and password|
+|handleSubmit|handle user sign-in| 
+
+
+## Example
+
+```javascript
+import React,{useState} from "react";
+import Login from "react-signin-page";
+
+const loginInitials = {
+  email: "",
+  password: "",
+};
+
+const LoginComponent = () =>{
+    const [login, setLogin] = useState(loginInitials);
+
+    const onValueChange = (e) => {
+    setLogin({ ...login, [e.target.name]: e.target.value });
+
+    const handleloginUser = async(e) =>{
+        let response = await authenticateLogin(login);
+        console.log(response);
+        // This is just a demo function. make sure to write your own function according to your requirements.
+    };
+
+    return (
+        <Login useState = {useState} onValueChange={onValueChange} handleSubmit={handleloginUser}/>
+    )
+  };
+
+};
+
+export default LoginComponent;
+
+```
 
 
 

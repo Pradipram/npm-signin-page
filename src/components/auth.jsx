@@ -8,9 +8,9 @@ import { dfbg,key,mail } from "../assets";
 // const dfbg =
 //   "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
-const Login = ({ useState, bg }) => {
+const Login = ({ useState, bg ,handleSubmit,onValueChange}) => {
   const [seen, setSeen] = useState(false);
-  // const [seen,setSeen] = React.useState(false);
+
   let imgSrc = bg ? bg : dfbg;
 
   return (
@@ -28,7 +28,7 @@ const Login = ({ useState, bg }) => {
               required
               name="email"
               className="login__input"
-              // onChange={(e) => onValueChange(e)}
+              onChange={(e) => onValueChange(e)}
             />
             <img src={mail} alt="mail" className="iconImage"/>
           </div>
@@ -41,7 +41,7 @@ const Login = ({ useState, bg }) => {
               required
               name="password"
               className="login__input"
-              // onChange={(e) => onValueChange(e)}
+              onChange={(e) => onValueChange(e)}
             />
             <img src={key} alt="password" className="iconImage"/>
           </div>
@@ -69,7 +69,7 @@ const Login = ({ useState, bg }) => {
         <button
           type="submit"
           className="login__button"
-          // onClick={(e) => loginUser(e)}
+          onClick={(e) => handleSubmit(e)}
         >
           Login
         </button>
