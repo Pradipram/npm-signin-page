@@ -42,7 +42,7 @@ function App() {
 
     return (
         <div className="App">
-        <Login useState = {useState} onValueChange={onValueChange} handleSubmit={handleloginUser}/>
+            <Login onValueChange={onValueChange} handleSubmit={handleloginUser}/>
         </div>
     );
 }
@@ -81,16 +81,14 @@ const LoginComponent = () =>{
     };
 
     return (
-        <Login useState = {useState} onValueChange={onValueChange} handleSubmit={handleloginUser}/>
+        <Login onValueChange={onValueChange} handleSubmit={handleloginUser}/>
     )
   };
 
 };
 
 export default LoginComponent;
-
 ```
-
 
 
 ## Screenshots
