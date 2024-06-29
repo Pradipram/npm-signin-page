@@ -20,13 +20,14 @@ Install the package using npm:
 
 ```bash
 npm i react-signin-page
-```
-
+        OR
+yarn add react-signin-page
+``` 
 
 ## Usage
 
 ```javascript
-import React, { useState } from "react";
+import React from "react";
 import Login from "react-signin-page";
 
 function App() {
@@ -50,11 +51,12 @@ function App() {
 export default App;
 ```
 #### props and their definition
-|Props |Function|
-|:----:|:------:|
-|bg|change background image|
-|onValueChange|handle user input e.g. email and password|
-|handleSubmit|handle user sign-in| 
+|Props|Required|Function|Default Value|
+|:---:|:------:|:------:|:------------:|
+|bg|No|change background image|https://tinyurl.com/2s3uzdrz|
+|onValueChange|Yes|handle user input e.g. email and password|NULL|
+|handleSubmit|Yes|handle user sign-in|NULL|
+|height|No|set height of the Login page|100vh| 
 
 
 ## Example

@@ -10,13 +10,13 @@ import react from "react";
 // const dfbg =
 //   "https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=600";
 
-const Login = ({ bg, handleSubmit, onValueChange }) => {
+const Login = ({ bg, handleSubmit, onValueChange,height }) => {
     const [seen, setSeen] = useState(false);
 
     let imgSrc = bg ? bg : dfbg;
 
     return (
-        <div className="login">
+        <div className="login" style={{height: height}}>
             <img src={imgSrc} alt="background" className="login__bg" />
 
             <form className="login__form">
