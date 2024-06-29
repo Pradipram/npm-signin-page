@@ -53,7 +53,7 @@ export default App;
 #### props and their definition
 |Props|Required|Function|Default Value|
 |:---:|:------:|:------:|:------------:|
-|bg|No|change background image|https://tinyurl.com/2s3uzdrz|
+|bg|No|change background image|![image](src/assets/images/bg.jpg)|
 |onValueChange|Yes|handle user input e.g. email and password|NULL|
 |handleSubmit|Yes|handle user sign-in|NULL|
 |height|No|set height of the Login page|100vh| 
